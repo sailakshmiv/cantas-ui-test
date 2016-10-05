@@ -184,10 +184,10 @@ import junit.framework.Assert;
 		      test.log(LogStatus.SKIP, arg0.getName()+"Screencast below:" + test.addScreenCapture("./html/"+screenshotname+".png"),arg0.getThrowable());
 		     }
 		     try {
-		      FileInputStream fs = new FileInputStream(workspace + "/src/file.Properties");
+		      FileInputStream fs = new FileInputStream(workspace + "file.Properties");
 		      prop.load(fs);
 		      fs.close();
-		      FileOutputStream fos = new FileOutputStream(workspace + "/src/file.Properties");
+		      FileOutputStream fos = new FileOutputStream(workspace + "file.Properties");
 		      prop.store(fos, "Test Result");
 	
 		      fos.flush();
