@@ -71,7 +71,7 @@ public class Suite implements ITestListener {
 		try{
 			report = new ExtentReports(projectHome+"/test-output"+"/ExtendedReports"+timeStamp+".html");
 			report.loadConfig(new File(projectHome+"/extent-config.xml"));
-            File file = new File(workspace+"/src/file.Properties");
+            File file = new File(workspace+"file.Properties");
 	    	
 			if(file.delete()){
 				System.out.println(file.getName() + " is deleted!");
