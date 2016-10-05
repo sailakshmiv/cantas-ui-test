@@ -112,7 +112,7 @@ import junit.framework.Assert;
 		String task = wait.until(ExpectedConditions.visibilityOfElementLocated((By.xpath(".//*[@id='loginWithGoogle']")))).getText();
 		Assert.assertEquals(task, "Log in with Google");
 		System.out.println("====> logout succeed");
-		Thread.sleep(300000);
+		//Thread.sleep(300000);
 	}
 		
 	
