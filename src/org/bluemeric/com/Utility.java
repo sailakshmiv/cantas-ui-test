@@ -66,6 +66,7 @@ public class Utility implements ITestListener {
 		System.out.println(val1);
 		Assert.assertTrue(true, val1);
 		Reporter.log("Url = " + url);
+		Reporter.log("URL = " + "http://" + System.getenv("APP_ENDPOINT")+":"+ System.getenv("APP_PORT_30000"));
 		}catch(Exception e){
 			e.getMessage();
 		}
